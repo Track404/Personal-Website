@@ -4,6 +4,7 @@ import { AuroraTextDemo } from '@/components/AuroraTextDemo';
 import { Highlight } from '@/components/ui/hero-highlight';
 import { useRef } from 'react';
 import { AuroraText } from '@/components/magicui/aurora-text';
+import { AppleCardsCarouselDemo } from '@/components/demoCarousel';
 function MainPage() {
   const aboutRef = useRef(null);
   const projectsRef = useRef(null);
@@ -31,18 +32,14 @@ function MainPage() {
           </div>
         </HeroHighlight>
         <div ref={aboutRef} className="h-screen shadow-md  ">
-          <h1 className="  ml-2  pt-20 text-5xl font-bold tracking-tighter sm:text-5xl md:text-6xl lg:text-7xl">
+          <h1 className="  ml-2   text-5xl font-bold tracking-tighter sm:text-5xl md:text-6xl lg:text-7xl">
             <AuroraText>
               <p className="pb-2">About</p>
             </AuroraText>
           </h1>
         </div>
         <div ref={projectsRef} className="h-screen shadow-md  ">
-          <h1 className="  ml-2  pt-20 text-5xl font-bold tracking-tighter sm:text-5xl md:text-6xl lg:text-7xl">
-            <AuroraText>
-              <p className="pb-2">Projects</p>
-            </AuroraText>
-          </h1>
+          <AppleCardsCarouselDemo />
         </div>
         <div ref={contactRef} className="h-screen shadow-md  ">
           <h1 className="  ml-2  pt-20 text-5xl font-bold tracking-tighter sm:text-5xl md:text-6xl lg:text-7xl">
