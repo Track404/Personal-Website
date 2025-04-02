@@ -1,5 +1,6 @@
 'use client';
 
+import { useState } from 'react';
 import {
   Card,
   CardContent,
@@ -9,21 +10,15 @@ import {
   CardTitle,
 } from '@/components/ui/card';
 import { MagicCard } from './magicui/magic-card';
-import Nodejs from '../assets/icons/nodejs.svg';
-import Express from '../assets/icons/express.svg';
-import Postgres from '../assets/icons/postgresql.svg';
-import Prisma from '../assets/icons/prisma.svg';
+import Git from '../assets/icons/git.svg';
+import Github from '../assets/icons/github.svg';
 
-import { useState } from 'react';
-
-export default function BackEndCard() {
+export default function VersionControlCard() {
   const [hoveredIndex, setHoveredIndex] = useState(null);
 
   const techStack = [
-    { src: Nodejs, name: 'Node.js' },
-    { src: Express, name: 'Express' },
-    { src: Prisma, name: 'Prisma' },
-    { src: Postgres, name: 'PostgreSQL' },
+    { src: Git, name: 'Git' },
+    { src: Github, name: 'Github' },
   ];
 
   return (
@@ -31,7 +26,7 @@ export default function BackEndCard() {
       <MagicCard gradientColor={'#D9D9D955'}>
         <CardHeader>
           <CardTitle className="text-center font-semibold text-2xl xl:text-3xl 2xl:text-4xl">
-            Back End
+            Version Control
           </CardTitle>
           <CardDescription>
             <div className="flex gap-3 justify-center">
@@ -58,9 +53,9 @@ export default function BackEndCard() {
           </CardDescription>
         </CardHeader>
         <CardContent className="text-center text-gray-700 dark:text-gray-300 mt-5 xl:text-lg 2xl:text-xl">
-          Building scalable and efficient back-end systems with modern
-          frameworks and databases, ensuring reliability, performance, and
-          seamless integration
+          Managing code efficiently with Git and GitHub, enabling seamless
+          collaboration, version tracking, and streamlined workflows for
+          development teams
         </CardContent>
       </MagicCard>
     </Card>

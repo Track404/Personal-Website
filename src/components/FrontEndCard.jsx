@@ -29,7 +29,7 @@ export default function FrontEndCard() {
     <Card className="w-full md:w-[30vw]">
       <MagicCard gradientColor={'#D9D9D955'}>
         <CardHeader>
-          <CardTitle className="text-center font-semibold text-2xl">
+          <CardTitle className="text-center font-semibold text-2xl xl:text-3xl 2xl:text-4xl">
             Front End
           </CardTitle>
           <CardDescription>
@@ -41,7 +41,11 @@ export default function FrontEndCard() {
                   onMouseEnter={() => setHoveredIndex(index)}
                   onMouseLeave={() => setHoveredIndex(null)}
                 >
-                  <img src={tech.src} alt={tech.name} className="w-12" />
+                  <img
+                    src={tech.src}
+                    alt={tech.name}
+                    className="w-12 xl:w-14 2xl:w-18"
+                  />
                   {hoveredIndex === index && (
                     <span className="absolute bottom-full left-1/2 transform -translate-x-1/2 mb-2 bg-gray-800 text-white text-xs py-1 px-2 rounded-lg whitespace-nowrap transition-opacity duration-200">
                       {tech.name}
@@ -52,10 +56,10 @@ export default function FrontEndCard() {
             </div>
           </CardDescription>
         </CardHeader>
-        <CardContent className="text-center text-gray-700 dark:text-gray-300 mt-5">
+        <CardContent className="text-center text-gray-700 dark:text-gray-300 mt-5 xl:text-lg 2xl:text-xl">
           Crafting dynamic and responsive user interfaces with modern front-end
           technologies. Focused on performance, accessibility, and seamless user
-          experiences.
+          experiences
         </CardContent>
       </MagicCard>
     </Card>
