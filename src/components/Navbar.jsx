@@ -11,7 +11,7 @@ function Navbar({ aboutRef, projectsRef, contactRef }) {
           Clement
           <AuroraText>Zambon</AuroraText>
         </h1>
-        <div className="flex gap-4 mr-5 md:text-lg font-bold tracking-tighter  lg:text-2xl">
+        <div className="flex gap-2 mr-3 md:gap-4 md:mr-5 md:text-lg font-bold tracking-tighter  lg:text-2xl">
           <Highlight>
             <div onClick={() => scrollToSection(projectsRef)}>Projects</div>
           </Highlight>

@@ -8,7 +8,7 @@ export const HeroHighlight = ({
   children,
   className,
   containerClassName,
-  aboutRef,
+  ContainerRef,
 }) => {
   let mouseX = useMotionValue(0);
   let mouseY = useMotionValue(0);
@@ -96,8 +96,8 @@ export const HeroHighlight = ({
       />
       <div className={cn('relative z-20', className)}>{children}</div>
       <button
-        onClick={() => scrollToSection(aboutRef)}
-        className="flex flex-col items-center animate-heartbeat hover:scale-115 transition-transform duration-400 ease-in-out absolute bottom-0 left-1/2 transform -translate-x-1/2 mb-4 font-bold"
+        onClick={() => scrollToSection(ContainerRef)}
+        className="flex flex-col items-center animate-heartbeat hover:scale-115 transition-transform duration-400 ease-in-out absolute bottom-0 left-1/2 transform -translate-x-1/2 mb-4 font-bold z-[100]"
       >
         <AuroraText>See More</AuroraText>
         <ChevronDown />

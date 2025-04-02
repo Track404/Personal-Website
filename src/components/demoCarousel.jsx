@@ -1,21 +1,27 @@
 'use client';
-
 import { Carousel, Card } from '@/components/ui/apple-cards-carousel';
 import { AuroraText } from './magicui/aurora-text';
-export function AppleCardsCarouselDemo() {
+import { HeroHighlight } from './ui/hero-highlight';
+import Waldo from '../assets/waldo.jpg';
+import Galaxia from '../assets/social.svg';
+import theHive from '../assets/thehive2.svg';
+import Sanix from '../assets/sanix.svg';
+export function AppleCardsCarouselDemo({ contactRef }) {
   const cards = data.map((card, index) => (
     <Card key={card.src} card={card} index={index} />
   ));
 
   return (
-    <div className="w-full h-full py-25">
-      <h1 className="  ml-8  text-5xl font-bold tracking-tighter sm:text-5xl md:text-6xl lg:text-7xl">
-        <AuroraText>
-          <p className="pb-2">Projects</p>
-        </AuroraText>
-      </h1>
-      <Carousel items={cards} />
-    </div>
+    <HeroHighlight className="w-full" ContainerRef={contactRef}>
+      <div className="w-full h-full py-25">
+        <h1 className="  ml-8 mt-10  text-5xl font-bold tracking-tighter sm:text-5xl md:text-6xl lg:text-7xl">
+          <AuroraText>
+            <p className="pb-2">Projects</p>
+          </AuroraText>
+        </h1>
+        <Carousel items={cards} />
+      </div>
+    </HeroHighlight>
   );
 }
 
@@ -53,40 +59,31 @@ const DummyContent = () => {
 
 const data = [
   {
-    category: 'Artificial Intelligence',
-    title: 'You can do more with AI.',
-    src: 'https://images.unsplash.com/photo-1593508512255-86ab42a8e620?q=80&w=3556&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+    category: 'Galaxia Social',
+    title: 'Social Media Platform',
+    src: Galaxia,
     content: <DummyContent />,
+    bgColor: 'bg-emerald-300',
   },
   {
-    category: 'Productivity',
-    title: 'Enhance your productivity.',
-    src: 'https://images.unsplash.com/photo-1531554694128-c4c6665f59c2?q=80&w=3387&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+    category: 'The Hive',
+    title: 'Messaging app',
+    src: theHive,
     content: <DummyContent />,
+    bgColor: 'bg-amber-300',
   },
   {
-    category: 'Product',
-    title: 'Launching the new Apple Vision Pro.',
-    src: 'https://images.unsplash.com/photo-1713869791518-a770879e60dc?q=80&w=2333&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+    category: "Where's Waldo",
+    title: 'Browser Game',
+    src: Waldo,
     content: <DummyContent />,
   },
 
   {
-    category: 'Product',
-    title: 'Maps for your iPhone 15 Pro Max.',
-    src: 'https://images.unsplash.com/photo-1599202860130-f600f4948364?q=80&w=2515&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+    category: 'Sanix',
+    title: 'Shopping Site',
+    src: Sanix,
     content: <DummyContent />,
-  },
-  {
-    category: 'iOS',
-    title: 'Photography just got better.',
-    src: 'https://images.unsplash.com/photo-1602081957921-9137a5d6eaee?q=80&w=2793&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
-    content: <DummyContent />,
-  },
-  {
-    category: 'Hiring',
-    title: 'Hiring for a Staff Software Engineer',
-    src: 'https://images.unsplash.com/photo-1511984804822-e16ba72f5848?q=80&w=2048&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
-    content: <DummyContent />,
+    bgColor: 'bg-blue-300',
   },
 ];
