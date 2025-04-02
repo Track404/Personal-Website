@@ -219,7 +219,7 @@ export const Card = ({ card, index, layout = false }) => {
         onClick={handleOpen}
         className={`rounded-3xl ${
           card.bgColor || 'bg-gray-100'
-        } dark:bg-neutral-900 transition duration-500 ease-in-out hover:opacity-95 hover:scale-105 h-80 w-56 md:h-[40rem] md:w-96 overflow-hidden flex flex-col items-start justify-start relative z-10`}
+        } dark:bg-neutral-900 transition duration-500 ease-in-out hover:opacity-95 hover:scale-105 h-140 w-65 md:h-[40rem] md:w-96 overflow-hidden flex flex-col items-start justify-start relative z-10`}
       >
         <div className="absolute h-full top-0 inset-x-0 bg-gradient-to-b from-black/50 via-transparent to-transparent z-30 pointer-events-none" />
         <div className="relative z-40 p-8">
