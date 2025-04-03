@@ -2,7 +2,7 @@ import Navbar from '@/components/Navbar';
 
 import { useRef } from 'react';
 
-import { ContactSection } from '@/components/ContactSection';
+import { ContactSection } from '../pages/ContactSection';
 import HeaderSection from '../pages/HeaderSection';
 import AboutSection from '../pages/AboutSection';
 import ProjectsSection from '../pages/ProjectsSection';
