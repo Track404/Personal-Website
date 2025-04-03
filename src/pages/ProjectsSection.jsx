@@ -14,7 +14,11 @@ export default function ProjectsSection({ projectsRef, contactRef }) {
   return (
     <>
       <div ref={projectsRef} className="h-screen  ">
-        <HeroHighlight className="w-full" ContainerRef={contactRef}>
+        <HeroHighlight
+          className="w-full"
+          ContainerRef={contactRef}
+          textButton={'Contact Me'}
+        >
           <div className="w-full h-full py-25">
             <h1 className="  ml-8 mt-10  text-5xl font-bold tracking-tighter sm:text-5xl md:text-6xl lg:text-7xl">
               <AuroraText>
