@@ -1,27 +1,31 @@
 'use client';
 import { Carousel, Card } from '@/components/ui/apple-cards-carousel';
-import { AuroraText } from './magicui/aurora-text';
-import { HeroHighlight } from './ui/hero-highlight';
+import { AuroraText } from '@/components/magicui/aurora-text';
+import { HeroHighlight } from '@/components/ui/hero-highlight';
 import Waldo from '../assets/waldo.jpg';
 import Galaxia from '../assets/social.svg';
 import theHive from '../assets/thehive2.svg';
 import Sanix from '../assets/sanix.svg';
-export function AppleCardsCarouselDemo({ contactRef }) {
+
+export default function ProjectsSection({ projectsRef, contactRef }) {
   const cards = data.map((card, index) => (
     <Card key={card.src} card={card} index={index} />
   ));
-
   return (
-    <HeroHighlight className="w-full" ContainerRef={contactRef}>
-      <div className="w-full h-full py-25">
-        <h1 className="  ml-8 mt-10  text-5xl font-bold tracking-tighter sm:text-5xl md:text-6xl lg:text-7xl">
-          <AuroraText>
-            <p className="pb-2">Projects</p>
-          </AuroraText>
-        </h1>
-        <Carousel items={cards} />
+    <>
+      <div ref={projectsRef} className="h-screen  ">
+        <HeroHighlight className="w-full" ContainerRef={contactRef}>
+          <div className="w-full h-full py-25">
+            <h1 className="  ml-8 mt-10  text-5xl font-bold tracking-tighter sm:text-5xl md:text-6xl lg:text-7xl">
+              <AuroraText>
+                <p className="pb-2">Projects</p>
+              </AuroraText>
+            </h1>
+            <Carousel items={cards} />
+          </div>
+        </HeroHighlight>
       </div>
-    </HeroHighlight>
+    </>
   );
 }
 

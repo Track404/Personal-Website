@@ -12,10 +12,12 @@ import {
   IconX,
 } from '@tabler/icons-react';
 import { cn } from '@/lib/utils';
+// eslint-disable-next-line no-unused-vars
 import { AnimatePresence, motion } from 'motion/react';
 
 import { useOutsideClick } from '@/hooks/use-outside-click';
 
+// eslint-disable-next-line react-refresh/only-export-components
 export const CarouselContext = createContext({
   onCardClose: () => {},
   currentIndex: 0,
@@ -142,7 +144,7 @@ export const Carousel = ({ items, initialScroll = 0 }) => {
 export const Card = ({ card, index, layout = false }) => {
   const [open, setOpen] = useState(false);
   const containerRef = useRef(null);
-  const { onCardClose, currentIndex } = useContext(CarouselContext);
+  const { onCardClose, _ } = useContext(CarouselContext);
 
   useEffect(() => {
     function onKeyDown(event) {
@@ -159,6 +161,7 @@ export const Card = ({ card, index, layout = false }) => {
 
     window.addEventListener('keydown', onKeyDown);
     return () => window.removeEventListener('keydown', onKeyDown);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [open]);
 
   useOutsideClick(containerRef, () => handleClose());
@@ -239,7 +242,6 @@ export const Card = ({ card, index, layout = false }) => {
         <BlurImage
           src={card.src}
           alt={card.title}
-          fill
           className="object-cover absolute z-10 inset-0"
         />
         <div className="absolute  bottom-5 right-10 text-white  font-medium  z-11">
@@ -265,7 +267,7 @@ export const BlurImage = ({ height, width, src, className, alt, ...rest }) => {
       height={height}
       loading="lazy"
       decoding="async"
-      blurDataURL={typeof src === 'string' ? src : undefined}
+      blurdataurl={typeof src === 'string' ? src : undefined}
       alt={alt ? alt : 'Background of a beautiful view'}
       {...rest}
     />

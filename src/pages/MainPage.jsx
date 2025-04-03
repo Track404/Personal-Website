@@ -1,15 +1,11 @@
 import Navbar from '@/components/Navbar';
 
 import { useRef } from 'react';
-import { AuroraText } from '@/components/magicui/aurora-text';
-import { AppleCardsCarouselDemo } from '@/components/demoCarousel';
 
-import FrontEndCard from '@/components/FrontEndCard';
-import BackEndCard from '@/components/BackEndCard';
-import VersionControlCard from '@/components/VersionControlCard';
 import { ContactSection } from '@/components/ContactSection';
 import HeaderSection from '../pages/HeaderSection';
 import AboutSection from '../pages/AboutSection';
+import ProjectsSection from '../pages/ProjectsSection';
 function MainPage() {
   const aboutRef = useRef(null);
   const projectsRef = useRef(null);
@@ -27,10 +23,8 @@ function MainPage() {
         />
         <HeaderSection aboutRef={aboutRef} />
         <AboutSection aboutRef={aboutRef} />
+        <ProjectsSection projectsRef={projectsRef} contactRef={contactRef} />
 
-        <div ref={projectsRef} className="h-screen  ">
-          <AppleCardsCarouselDemo contactRef={contactRef} />
-        </div>
         <ContactSection aboutRef={aboutRef} />
       </div>
     </>
