@@ -9,6 +9,7 @@ import { MagicCardDemo } from '@/components/demoCard';
 import FrontEndCard from '@/components/FrontEndCard';
 import BackEndCard from '@/components/BackEndCard';
 import VersionControlCard from '@/components/VersionControlCard';
+import { ContactSection } from '@/components/ContactSection';
 function MainPage() {
   const aboutRef = useRef(null);
   const projectsRef = useRef(null);
@@ -68,16 +69,7 @@ function MainPage() {
         <div ref={projectsRef} className="h-screen  ">
           <AppleCardsCarouselDemo contactRef={contactRef} />
         </div>
-        <div
-          ref={contactRef}
-          className="relative h-screen shadow-[0_-5px_15px_rgba(0,0,0,0.08),0_5px_15px_rgba(0,0,0,0.08)] z-[99]"
-        >
-          <h1 className="  ml-2  pt-20 text-5xl font-bold tracking-tighter sm:text-5xl md:text-6xl lg:text-7xl">
-            <AuroraText>
-              <p className="pb-2">Contact</p>
-            </AuroraText>
-          </h1>
-        </div>
+        <ContactSection aboutRef={aboutRef} />
       </div>
     </>
   );
