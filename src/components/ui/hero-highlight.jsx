@@ -96,10 +96,10 @@ export const HeroHighlight = ({
           `,
         }}
       />
-      <div className={cn('relative z-20', className)}>{children}</div>
+      <div className={cn('relative z-7', className)}>{children}</div>
       <button
         onClick={() => scrollToSection(ContainerRef)}
-        className="flex flex-col items-center animate-heartbeat hover:scale-115 transition-transform duration-400 ease-in-out absolute bottom-0 left-1/2 transform -translate-x-1/2 mb-4 font-bold z-[100]"
+        className="flex flex-col items-center animate-heartbeat hover:scale-115 transition-transform duration-400 ease-in-out absolute bottom-0 left-1/2 transform -translate-x-1/2 mb-4 font-bold z-5 isolate "
       >
         <AuroraText>{textButton}</AuroraText>
         <ChevronDown />

@@ -7,7 +7,7 @@ export default function AboutSection({ aboutRef }) {
     <>
       <div
         ref={aboutRef}
-        className="relative p-2 min-h-screen  shadow-[0_-5px_15px_rgba(0,0,0,0.08),0_5px_15px_rgba(0,0,0,0.08)] z-[99]"
+        className="relative p-2 min-h-screen border-b-2  shadow-[0_-5px_15px_rgba(0,0,0,0.08),0_5px_15px_rgba(0,0,0,0.08)] "
       >
         <h1 className="ml-2 pt-20 text-5xl font-bold tracking-tighter sm:text-5xl md:text-6xl lg:text-7xl">
           <AuroraText>

@@ -66,7 +66,7 @@ export function ContactSection({ contactRef }) {
   return (
     <div
       ref={contactRef}
-      className="relative h-full pb-15 shadow-[0_-5px_15px_rgba(0,0,0,0.08),0_5px_15px_rgba(0,0,0,0.08)] z-[99] px-4 md:px-6  overflow-y-auto"
+      className="relative h-full md:pb-15 shadow-[0_-5px_15px_rgba(0,0,0,0.08),0_5px_15px_rgba(0,0,0,0.08)]  px-4 md:px-6  overflow-y-auto"
     >
       <h1 className="ml-2 pt-20 text-5xl font-bold tracking-tighter sm:text-5xl md:text-6xl lg:text-7xl">
         <AuroraText>
