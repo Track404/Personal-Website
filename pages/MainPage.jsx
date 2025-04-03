@@ -10,6 +10,7 @@ import FrontEndCard from '@/components/FrontEndCard';
 import BackEndCard from '@/components/BackEndCard';
 import VersionControlCard from '@/components/VersionControlCard';
 import { ContactSection } from '@/components/ContactSection';
+import HeaderSection from '../pages/HeaderSection';
 function MainPage() {
   const aboutRef = useRef(null);
   const projectsRef = useRef(null);
@@ -25,17 +26,7 @@ function MainPage() {
           projectsRef={projectsRef}
           contactRef={contactRef}
         />
-        <HeroHighlight ContainerRef={aboutRef}>
-          <div className="ml-4 h-full ">
-            <AuroraTextDemo />
-            <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl  ml-2 font-bold w-[90%] mt-6 md:mt-10 lg:mt-12 mx-auto text-left leading-relaxed hyphens-auto balance max-w-4xl ">
-              Full stack developer turning complex ideas into seamless web
-              experiences. Merging
-              <Highlight>design elegance</Highlight> with
-              <Highlight>functional power</Highlight> through deliberate code.
-            </h2>
-          </div>
-        </HeroHighlight>
+        <HeaderSection aboutRef={aboutRef} />
         <div
           ref={aboutRef}
           className="relative p-2 min-h-screen  shadow-[0_-5px_15px_rgba(0,0,0,0.08),0_5px_15px_rgba(0,0,0,0.08)] z-[99]"
