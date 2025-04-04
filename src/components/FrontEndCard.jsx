@@ -34,7 +34,7 @@ export default function FrontEndCard() {
             Front End
           </CardTitle>
           <CardDescription>
-            <div className="flex gap-3 justify-center">
+            <div className="flex gap-3 justify-center items-center">
               {techStack.map((tech, index) => (
                 <div
                   key={index}
