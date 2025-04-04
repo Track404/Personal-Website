@@ -8,6 +8,7 @@ import theHive from '../assets/thehive2.svg';
 import Sanix from '../assets/sanix.svg';
 import { useTranslation } from 'react-i18next';
 import { Safari } from '@/components/magicui/safari';
+import Iphone15Pro from '@/components/magicui/iphone-15-pro';
 export default function ProjectsSection({ projectsRef, contactRef }) {
   const { t } = useTranslation();
   const cards = data.map((card, index) => (
@@ -38,7 +39,7 @@ export default function ProjectsSection({ projectsRef, contactRef }) {
 const DummyContent = () => {
   return (
     <>
-      <div className="bg-[#F5F5F7] dark:bg-neutral-800 p-8 md:p-14 rounded-3xl mb-4">
+      <div className=" bg-[#F5F5F7] dark:bg-neutral-800 p-8 md:p-14 rounded-3xl mb-4">
         <p className="text-neutral-600 dark:text-neutral-400 text-base md:text-lg">
           A modern social media platform designed to showcase my web development
           skills.
@@ -59,29 +60,57 @@ const DummyContent = () => {
         <h2 className="text-2xl font-bold mt-6 text-neutral-700 dark:text-neutral-200">
           Demo
         </h2>
+
+        <a
+          href="https://galaxiasocial.netlify.app/login"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="inline-block mt-6 mb-6 px-8 py-4 text-white text-xl font-semibold rounded-xl shadow 
+             bg-gradient-to-r from-[#FF0080] via-[#7928CA] to-[#0070F3]
+             transform transition-transform duration-300 ease-in-out
+             hover:scale-105 active:scale-95"
+        >
+          🚀 Live Demo
+        </a>
+
         <p>
           🔗{' '}
           <a
-            href="https://galaxiasocial.netlify.app/login"
-            className="text-blue-500"
+            href="https://github.com/Track404/Galaxia-social-media"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-block pl-1 bg-gradient-to-r from-[#FF0080] via-[#7928CA] to-[#0070F3] 
+               bg-clip-text text-transparent font-semibold hover:underline 
+               transform transition-transform duration-300 ease-in-out 
+               hover:scale-105 active:scale-95"
           >
-            Live Demo
+            FrontEnd Repo
           </a>
         </p>
+
         <p>
           🔗{' '}
           <a
             href="https://github.com/Track404/Galaxia-social-media-backend"
-            className="text-blue-500"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-block pl-1  bg-gradient-to-r from-[#FF0080] via-[#7928CA] to-[#0070F3] 
+               bg-clip-text text-transparent font-semibold hover:underline 
+               transform transition-transform duration-300 ease-in-out 
+               hover:scale-105 active:scale-95"
           >
             Backend Repo
           </a>
         </p>
+
         <Safari
           imageSrc="/src/assets/screenshot.png"
           className="w-full h-full mt-5 mb-5"
         />
-
+        <Iphone15Pro
+          src="/src/assets/screenshotMobile.png"
+          className="mx-auto w-1/2  h-full mt-5 mb-5 "
+        />
         <h2 className="text-2xl font-bold mt-6 text-neutral-700 dark:text-neutral-200">
           Technologies
         </h2>

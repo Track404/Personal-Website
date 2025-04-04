@@ -17,6 +17,7 @@ import { AnimatePresence, motion } from 'motion/react';
 
 import { useOutsideClick } from '@/hooks/use-outside-click';
 import { useTranslation } from 'react-i18next';
+import { AuroraText } from '../magicui/aurora-text';
 // eslint-disable-next-line react-refresh/only-export-components
 export const CarouselContext = createContext({
   onCardClose: () => {},
@@ -205,13 +206,13 @@ export const Card = ({ card, index, layout = false }) => {
                 layoutId={layout ? `category-${card.title}` : undefined}
                 className="text-base font-medium text-black dark:text-white"
               >
-                {card.category}
+                {card.title}
               </motion.p>
               <motion.p
                 layoutId={layout ? `title-${card.title}` : undefined}
                 className="text-2xl md:text-5xl font-semibold text-neutral-700 mt-4 dark:text-white"
               >
-                {card.title}
+                <AuroraText>{card.category}</AuroraText>
               </motion.p>
               <div className="py-10">{card.content}</div>
             </motion.div>
