@@ -14,8 +14,9 @@ import Html from '../assets/icons/html.svg';
 import Css from '../assets/icons/css.svg';
 import React from '../assets/icons/react.svg';
 import Tailwind from '../assets/icons/tailwind.svg';
-
+import { Translation, useTranslation } from 'react-i18next';
 export default function FrontEndCard() {
+  const { t } = useTranslation();
   const [hoveredIndex, setHoveredIndex] = useState(null);
 
   const techStack = [
@@ -57,9 +58,7 @@ export default function FrontEndCard() {
           </CardDescription>
         </CardHeader>
         <CardContent className="text-center text-gray-700 dark:text-gray-300 mt-5 xl:text-lg 2xl:text-xl">
-          Crafting dynamic and responsive user interfaces with modern front-end
-          technologies. Focused on performance, accessibility, and seamless user
-          experiences
+          {t('about.cards.frontEnd')}
         </CardContent>
       </MagicCard>
     </Card>

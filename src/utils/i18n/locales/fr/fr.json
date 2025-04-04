@@ -1,6 +1,19 @@
 {
-  "Header": {
+  "header": {
     "part": "Développeur full stack transformant des idées complexes en expériences web fluides. Fusionnant <1>l'élégance du design</1> avec la <1>puissance fonctionnelle</1> grâce à un code réfléchi.",
-    "dev": "Developpeur"
+    "dev": "Developpeur",
+    "seeMore": "Voir Plus"
+  },
+  "about": {
+    "pageName": "À propos ",
+    "description": {
+      "part1": "Développeur JavaScript basé en France, spécialisé en React et Node.js. À 24 ans, j'ai récemment terminé ma formation en développement web et je suis prêt à créer des applications dynamiques et réactives qui offrent des expériences utilisateur exceptionnelles.",
+      "part2": "J'apporte une perspective fraîche et des pratiques de développement modernes à chaque projet. Je recherche actuellement des opportunités pour appliquer mes compétences professionnellement tout en continuant à évoluer en tant que développeur."
+    },
+    "cards": {
+      "frontEnd": "Création d'interfaces utilisateur dynamiques et responsives avec des technologies front-end modernes. Accent mis sur la performance, l'accessibilité et des expériences utilisateur fluides",
+      "backEnd": "Construction de systèmes back-end évolutifs et efficaces avec des frameworks et bases de données modernes, garantissant fiabilité, performance et intégration harmonieuse",
+      "versionControl": "Gestion efficace du code avec Git et GitHub, permettant une collaboration fluide, un suivi des versions et des flux de travail optimisés pour les équipes de développement"
+    }
   }
 }

@@ -12,8 +12,9 @@ import {
 import { MagicCard } from './magicui/magic-card';
 import Git from '../assets/icons/git.svg';
 import Github from '../assets/icons/github.svg';
-
+import { useTranslation } from 'react-i18next';
 export default function VersionControlCard() {
+  const { t } = useTranslation();
   const [hoveredIndex, setHoveredIndex] = useState(null);
 
   const techStack = [
@@ -53,9 +54,7 @@ export default function VersionControlCard() {
           </CardDescription>
         </CardHeader>
         <CardContent className="text-center text-gray-700 dark:text-gray-300 mt-5 xl:text-lg 2xl:text-xl">
-          Managing code efficiently with Git and GitHub, enabling seamless
-          collaboration, version tracking, and streamlined workflows for
-          development teams
+          {t('about.cards.versionControl')}
         </CardContent>
       </MagicCard>
     </Card>

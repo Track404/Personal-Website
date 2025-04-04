@@ -15,8 +15,10 @@ import Postgres from '../assets/icons/postgresql.svg';
 import Prisma from '../assets/icons/prisma.svg';
 
 import { useState } from 'react';
+import { useTranslation } from 'react-i18next';
 
 export default function BackEndCard() {
+  const { t } = useTranslation();
   const [hoveredIndex, setHoveredIndex] = useState(null);
 
   const techStack = [
@@ -58,9 +60,7 @@ export default function BackEndCard() {
           </CardDescription>
         </CardHeader>
         <CardContent className="text-center text-gray-700 dark:text-gray-300 mt-5 xl:text-lg 2xl:text-xl">
-          Building scalable and efficient back-end systems with modern
-          frameworks and databases, ensuring reliability, performance, and
-          seamless integration
+          {t('about.cards.backEnd')}
         </CardContent>
       </MagicCard>
     </Card>

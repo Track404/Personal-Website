@@ -1,6 +1,19 @@
 {
-  "Header": {
+  "header": {
     "part": "Full stack developer turning complex ideas into seamless web experiences. Merging<1>design elegance</1> with <1>functional power</1> through deliberate code.",
-    "dev": "Developper"
+    "dev": "Developper",
+    "seeMore": "See More"
+  },
+  "about": {
+    "pageName": "About Me",
+    "description": {
+      "part1": "JavaScript developer based in France, specializing in React and Node.js. At 24, I've recently completed my web development training and am ready to create dynamic, responsive applications that deliver exceptional user experiences.",
+      "part2": "I bring a fresh perspective and modern development practices to every project. Currently seeking opportunities to apply my skills professionally while continuing to grow as a developer."
+    },
+    "cards": {
+      "frontEnd": "Crafting dynamic and responsive user interfaces with modern front-end technologies. Focused on performance, accessibility, and seamless user experiences",
+      "backEnd": "Building scalable and efficient back-end systems with modern frameworks and databases, ensuring reliability, performance, and seamless integration",
+      "versionControl": " Managing code efficiently with Git and GitHub, enabling seamless collaboration, version tracking, and streamlined workflows for development teams"
+    }
   }
 }
