@@ -1,7 +1,7 @@
 import { AuroraText } from '@/components/magicui/aurora-text';
-import FrontEndCard from '@/components/FrontEndCard';
-import BackEndCard from '@/components/BackEndCard';
-import VersionControlCard from '@/components/VersionControlCard';
+import FrontEndCard from '@/components/aboutCards/FrontEndCard';
+import BackEndCard from '@/components/aboutCards/BackEndCard';
+import VersionControlCard from '@/components/aboutCards/VersionControlCard';
 import { useTranslation } from 'react-i18next';
 export default function AboutSection({ aboutRef }) {
   const { t } = useTranslation();

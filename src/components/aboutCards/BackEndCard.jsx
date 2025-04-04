@@ -8,11 +8,11 @@ import {
   CardHeader,
   CardTitle,
 } from '@/components/ui/card';
-import { MagicCard } from './magicui/magic-card';
-import Nodejs from '../assets/icons/nodejs.svg';
-import Express from '../assets/icons/express.svg';
-import Postgres from '../assets/icons/postgresql.svg';
-import Prisma from '../assets/icons/prisma.svg';
+import { MagicCard } from '../magicui/magic-card';
+import Nodejs from '../../assets/icons/nodejs.svg';
+import Express from '../../assets/icons/express.svg';
+import Postgres from '../../assets/icons/postgresql.svg';
+import Prisma from '../../assets/icons/prisma.svg';
 
 import { useState } from 'react';
 import { useTranslation } from 'react-i18next';
