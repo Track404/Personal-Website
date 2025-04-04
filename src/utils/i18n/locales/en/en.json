@@ -15,5 +15,25 @@
       "backEnd": "Building scalable and efficient back-end systems with modern frameworks and databases, ensuring reliability, performance, and seamless integration",
       "versionControl": " Managing code efficiently with Git and GitHub, enabling seamless collaboration, version tracking, and streamlined workflows for development teams"
     }
+  },
+  "projects": {
+    "pageName": "Projects",
+    "contactMe": "Contact Me",
+    "galaxiaSocial": {
+      "name": "galaxia Social",
+      "title": "Social Media "
+    },
+    "theHive": {
+      "name": "The Hive",
+      "title": "Messaging App"
+    },
+    "wheresWaldo": {
+      "name": "Where's Waldo",
+      "title": "Browser Game"
+    },
+    "sanix": {
+      "name": "Sanix",
+      "title": "Shopping Website"
+    }
   }
 }

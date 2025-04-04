@@ -16,7 +16,7 @@ import { cn } from '@/lib/utils';
 import { AnimatePresence, motion } from 'motion/react';
 
 import { useOutsideClick } from '@/hooks/use-outside-click';
-
+import { useTranslation } from 'react-i18next';
 // eslint-disable-next-line react-refresh/only-export-components
 export const CarouselContext = createContext({
   onCardClose: () => {},
@@ -145,6 +145,7 @@ export const Card = ({ card, index, layout = false }) => {
   const [open, setOpen] = useState(false);
   const containerRef = useRef(null);
   const { onCardClose, _ } = useContext(CarouselContext);
+  const { t } = useTranslation();
 
   useEffect(() => {
     function onKeyDown(event) {
@@ -230,13 +231,13 @@ export const Card = ({ card, index, layout = false }) => {
             layoutId={layout ? `category-${card.category}` : undefined}
             className="text-white text-sm md:text-base font-medium font-sans text-left"
           >
-            {card.category}
+            {t(`projects.${card.name}.name`)}
           </motion.p>
           <motion.p
             layoutId={layout ? `title-${card.title}` : undefined}
             className="text-white text-xl md:text-3xl font-semibold max-w-xs text-left [text-wrap:balance] font-sans mt-2"
           >
-            {card.title}
+            {t(`projects.${card.name}.title`)}
           </motion.p>
         </div>
         <BlurImage

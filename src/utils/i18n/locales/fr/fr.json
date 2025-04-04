@@ -15,5 +15,25 @@
       "backEnd": "Construction de systèmes back-end évolutifs et efficaces avec des frameworks et bases de données modernes, garantissant fiabilité, performance et intégration harmonieuse",
       "versionControl": "Gestion efficace du code avec Git et GitHub, permettant une collaboration fluide, un suivi des versions et des flux de travail optimisés pour les équipes de développement"
     }
+  },
+  "projects": {
+    "pageName": "Projets",
+    "contactMe": "Contactez-moi",
+    "galaxiaSocial": {
+      "name": "Galaxia Social",
+      "title": "Réseau Social"
+    },
+    "theHive": {
+      "name": "The Hive",
+      "title": "Messagerie Instantanée"
+    },
+    "wheresWaldo": {
+      "name": "Où est Charlie",
+      "title": "Jeu sur Navigateur"
+    },
+    "sanix": {
+      "name": "Sanix",
+      "title": "Site de Shopping"
+    }
   }
 }

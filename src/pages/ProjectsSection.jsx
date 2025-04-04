@@ -6,8 +6,9 @@ import Waldo from '../assets/waldo.jpg';
 import Galaxia from '../assets/social.svg';
 import theHive from '../assets/thehive2.svg';
 import Sanix from '../assets/sanix.svg';
-
+import { useTranslation } from 'react-i18next';
 export default function ProjectsSection({ projectsRef, contactRef }) {
+  const { t } = useTranslation();
   const cards = data.map((card, index) => (
     <Card key={card.src} card={card} index={index} />
   ));
@@ -17,12 +18,12 @@ export default function ProjectsSection({ projectsRef, contactRef }) {
         <HeroHighlight
           className="w-full"
           ContainerRef={contactRef}
-          textButton={'Contact Me'}
+          textButton={t('projects.contactMe')}
         >
           <div className="w-full h-full py-25">
             <h1 className="  ml-8 mt-10  text-5xl font-bold tracking-tighter sm:text-5xl md:text-6xl lg:text-7xl">
               <AuroraText>
-                <p className="pb-2">Projects</p>
+                <p className="pb-2">{t('projects.pageName')}</p>
               </AuroraText>
             </h1>
             <Carousel items={cards} />
@@ -67,6 +68,7 @@ const DummyContent = () => {
 
 const data = [
   {
+    name: 'galaxiaSocial',
     category: 'Galaxia Social',
     title: 'Social Media Platform',
     src: Galaxia,
@@ -74,6 +76,7 @@ const data = [
     bgColor: 'bg-emerald-300',
   },
   {
+    name: 'theHive',
     category: 'The Hive',
     title: 'Messaging app',
     src: theHive,
@@ -81,6 +84,7 @@ const data = [
     bgColor: 'bg-amber-300',
   },
   {
+    name: 'wheresWaldo',
     category: "Where's Waldo",
     title: 'Browser Game',
     src: Waldo,
@@ -88,6 +92,7 @@ const data = [
   },
 
   {
+    name: 'sanix',
     category: 'Sanix',
     title: 'Shopping Site',
     src: Sanix,
