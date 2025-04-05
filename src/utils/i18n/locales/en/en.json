@@ -51,7 +51,33 @@
     },
     "theHive": {
       "name": "The Hive",
-      "title": "Messaging App"
+      "title": "Messaging App",
+      "card": {
+        "hive": {
+          "description": "A real-time messaging app for 1-on-1 and group conversations.",
+          "featuresTitle": "Features",
+          "features": [
+            "✅ Send messages in <strong>1-on-1</strong> and <strong>group chats</strong>",
+            "✅ Create new <strong>conversations</strong> with users",
+            "✅ Create and manage <strong>groups</strong>",
+            "✅ Update <strong>user information</strong> (e.g., profile details)",
+            "✅ Secure REST API for communication",
+            "✅ Responsive design with TailwindCSS"
+          ],
+          "demoTitle": "Demo",
+          "liveDemo": "🚀 Live Demo",
+          "frontendRepo": "🔗 FrontEnd Repo",
+          "backendRepo": "🔗 BackEnd Repo",
+          "technologiesTitle": "Technologies",
+          "technologies": [
+            "🛠 Frontend: React, TailwindCSS",
+            "🚀 Backend: Node.js, Express.js",
+            "🛢 Database: PostgreSQL",
+            "🔐 Authentication: JWT",
+            "📡 API Type: REST API"
+          ]
+        }
+      }
     },
     "wheresWaldo": {
       "name": "Where's Waldo",

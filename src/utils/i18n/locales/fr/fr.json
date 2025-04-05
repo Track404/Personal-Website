@@ -51,7 +51,33 @@
     },
     "theHive": {
       "name": "The Hive",
-      "title": "Messagerie Instantanée"
+      "title": "Messagerie Instantanée",
+      "card": {
+        "hive": {
+          "description": "Une application de messagerie en temps réel pour des conversations en tête-à-tête et en groupe.",
+          "featuresTitle": "Fonctionnalités",
+          "features": [
+            "✅ Envoyer des messages dans des <strong>discussions privées</strong> et <strong>groupes</strong>",
+            "✅ Créer de nouvelles <strong>conversations</strong> avec des utilisateurs",
+            "✅ Créer et gérer des <strong>groupes</strong>",
+            "✅ Mettre à jour les <strong>informations utilisateur</strong> (ex : profil)",
+            "✅ API REST sécurisée pour la communication",
+            "✅ Design responsive avec TailwindCSS"
+          ],
+          "demoTitle": "Démo",
+          "liveDemo": "🚀 Démo en ligne",
+          "frontendRepo": "🔗 Dépôt FrontEnd",
+          "backendRepo": "🔗 Dépôt BackEnd",
+          "technologiesTitle": "Technologies",
+          "technologies": [
+            "🛠 Frontend : React, TailwindCSS",
+            "🚀 Backend : Node.js, Express.js",
+            "🛢 Base de données : PostgreSQL",
+            "🔐 Authentification : JWT",
+            "📡 Type d'API : REST API"
+          ]
+        }
+      }
     },
     "wheresWaldo": {
       "name": "Où est Charlie",
