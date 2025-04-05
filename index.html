@@ -1,13 +1,55 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite + React</title>
+
+    <!-- Meta Tags for SEO -->
+    <meta
+      name="description"
+      content="Clement Zambon - Personal portfolio showcasing work, projects, and professional achievements."
+    />
+
+    <!-- Open Graph Tags for Social Media -->
+    <meta property="og:title" content="Clement Zambon - Personal Portfolio" />
+    <meta
+      property="og:description"
+      content="Explore the official portfolio of Clement Zambon. Learn about my work, projects, and professional experience."
+    />
+    <meta property="og:url" content="https://www.clementzambon.com" />
+    <meta property="og:type" content="website" />
+
+    <!-- Structured Data (Schema Markup) -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Clement Zambon",
+        "url": "https://www.clementzambon.com",
+        "sameAs": [
+          "https://www.linkedin.com/in/clementzambon",
+          "https://twitter.com/clementzambon"
+        ],
+        "image": "URL_TO_IMAGE.jpg"
+      }
+    </script>
+
+    <!-- Title Tag -->
+    <title>
+      Clement Zambon - Personal Portfolio | Web Developer, Designer, and Creator
+    </title>
+
+    <!-- Favicon and Icons -->
+    <link rel="icon" href="path_to_favicon.ico" type="image/x-icon" />
+    <link rel="icon" href="path_to_icon.svg" type="image/svg+xml" />
+    <link rel="apple-touch-icon" href="public/vite.svg" />
+
+    <!-- External CSS (if needed) -->
+    <link rel="stylesheet" href="path_to_styles.css" />
   </head>
   <body>
     <div id="root"></div>
-    <script type="module" src="/src/main.jsx"></script>
+    <!-- JavaScript with "defer" attribute for better performance -->
+    <script type="module" src="/src/main.jsx" defer></script>
   </body>
 </html>
