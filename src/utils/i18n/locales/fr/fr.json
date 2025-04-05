@@ -35,5 +35,31 @@
       "name": "Sanix",
       "title": "Site de Shopping"
     }
+  },
+  "contact": {
+    "pageName": "Contact",
+    "title": "Envoyez-moi un email",
+    "description": "Je suis actuellement ouvert à de nouvelles opportunités. N'hésitez pas à me contacter !",
+    "form": {
+      "namePlaceholder": "Votre nom",
+      "emailPlaceholder": "Votre email",
+      "messagePlaceholder": "Votre message",
+      "submitButton": "Envoyer le message",
+      "sending": "Envoi en cours...",
+      "success": "Message envoyé avec succès ! Je vous répondrai bientôt.",
+      "error": "Désolé, une erreur est survenue lors de l'envoi. Veuillez réessayer plus tard."
+    },
+    "info": {
+      "emailTitle": "Email",
+      "emailAddress": "clement.zambon@gmail.com",
+      "locationTitle": "Localisation",
+      "locationValue": "France",
+      "connect": "Réseaux sociaux",
+      "responseNote": "Je réponds généralement sous 24 heures. Au plaisir d'échanger !"
+    },
+    "social": {
+      "linkedin": "https://linkedin.com/in/yourusername",
+      "github": "https://github.com/Track404"
+    }
   }
 }

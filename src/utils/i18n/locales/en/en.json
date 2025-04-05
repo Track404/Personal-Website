@@ -35,5 +35,31 @@
       "name": "Sanix",
       "title": "Shopping Website"
     }
+  },
+  "contact": {
+    "pageName": "Contact",
+    "title": "Send me an Email",
+    "description": "I'm currently open to new opportunities. Feel free to reach out!",
+    "form": {
+      "namePlaceholder": "Your Name",
+      "emailPlaceholder": "Your Email",
+      "messagePlaceholder": "Your Message",
+      "submitButton": "Send Message",
+      "sending": "Sending...",
+      "success": "Message sent successfully! I'll get back to you soon.",
+      "error": "Sorry, there was a problem sending your message. Please try again later."
+    },
+    "info": {
+      "emailTitle": "Email",
+      "emailAddress": "clement.zambon@gmail.com",
+      "locationTitle": "Location",
+      "locationValue": "France",
+      "connect": "Connect with me",
+      "responseNote": "I typically respond within 24 hours. Looking forward to connecting!"
+    },
+    "social": {
+      "linkedin": "https://linkedin.com/in/yourusername",
+      "github": "https://github.com/Track404"
+    }
   }
 }

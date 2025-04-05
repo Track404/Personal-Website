@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import { useTranslation } from 'react-i18next';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import { Textarea } from '@/components/ui/textarea';
@@ -14,6 +15,8 @@ import { LinkedinIcon, GithubIcon, MailIcon, MapPinIcon } from 'lucide-react';
 import emailjs from '@emailjs/browser';
 
 export function ContactSection({ contactRef }) {
+  const { t } = useTranslation();
+
   const [formData, setFormData] = useState({
     name: '',
     email: '',
@@ -34,7 +37,6 @@ export function ContactSection({ contactRef }) {
     setSubmitStatus(null);
 
     try {
-      // Replace these with your actual EmailJS service, template, and user IDs
       const result = await emailjs.send(
         'service_vczjmfq',
         'template_ozxp4hl',
@@ -48,9 +50,7 @@ export function ContactSection({ contactRef }) {
 
       if (result.status === 200) {
         setSubmitStatus('success');
-        // Reset form after submission
         setFormData({ name: '', email: '', message: '' });
-        // Clear success message after 5 seconds
         setTimeout(() => setSubmitStatus(null), 5000);
       } else {
         setSubmitStatus('error');
@@ -66,69 +66,62 @@ export function ContactSection({ contactRef }) {
   return (
     <div
       ref={contactRef}
-      className="relative h-full md:pb-15 shadow-[0_-5px_15px_rgba(0,0,0,0.08),0_5px_15px_rgba(0,0,0,0.08)]  px-4 md:px-6  overflow-y-auto"
+      className="relative h-full pb-15 shadow-[0_-5px_15px_rgba(0,0,0,0.08),0_5px_15px_rgba(0,0,0,0.08)] px-4 md:px-6 overflow-y-auto"
     >
       <h1 className="ml-2 pt-20 text-5xl font-bold tracking-tighter sm:text-5xl md:text-6xl lg:text-7xl">
         <AuroraText>
-          <p className="pb-2">Contact</p>
+          <p className="pb-2">{t('contact.pageName')}</p>
         </AuroraText>
       </h1>
 
       <div className="flex flex-col md:flex-row gap-8 mt-10 max-w-6xl mx-auto">
         <Card className="flex-1">
           <CardHeader>
-            <CardTitle>Send me an Email </CardTitle>
-            <CardDescription>
-              I'm currently open to new opportunities. Feel free to reach out!
-            </CardDescription>
+            <CardTitle>{t('contact.title')}</CardTitle>
+            <CardDescription>{t('contact.description')}</CardDescription>
           </CardHeader>
           <CardContent>
             <form onSubmit={handleSubmit} className="space-y-4">
-              <div>
-                <Input
-                  placeholder="Your Name"
-                  name="name"
-                  value={formData.name}
-                  onChange={handleChange}
-                  required
-                  className="bg-background"
-                />
-              </div>
-              <div>
-                <Input
-                  type="email"
-                  placeholder="Your Email"
-                  name="email"
-                  value={formData.email}
-                  onChange={handleChange}
-                  required
-                  className="bg-background"
-                />
-              </div>
-              <div>
-                <Textarea
-                  placeholder="Your Message"
-                  name="message"
-                  value={formData.message}
-                  onChange={handleChange}
-                  required
-                  className="min-h-32 bg-background"
-                />
-              </div>
+              <Input
+                placeholder={t('contact.form.namePlaceholder')}
+                name="name"
+                value={formData.name}
+                onChange={handleChange}
+                required
+                className="bg-background"
+              />
+              <Input
+                type="email"
+                placeholder={t('contact.form.emailPlaceholder')}
+                name="email"
+                value={formData.email}
+                onChange={handleChange}
+                required
+                className="bg-background"
+              />
+              <Textarea
+                placeholder={t('contact.form.messagePlaceholder')}
+                name="message"
+                value={formData.message}
+                onChange={handleChange}
+                required
+                className="min-h-32 bg-background"
+              />
               <Button type="submit" className="w-full" disabled={isSubmitting}>
-                {isSubmitting ? 'Sending...' : 'Send Message'}
+                {isSubmitting
+                  ? t('contact.form.sending')
+                  : t('contact.form.submitButton')}
               </Button>
 
               {submitStatus === 'success' && (
                 <div className="text-green-600 font-medium text-center mt-2">
-                  Message sent successfully! I'll get back to you soon.
+                  {t('contact.form.success')}
                 </div>
               )}
 
               {submitStatus === 'error' && (
                 <div className="text-red-600 font-medium text-center mt-2">
-                  Sorry, there was a problem sending your message. Please try
-                  again later.
+                  {t('contact.form.error')}
                 </div>
               )}
             </form>
@@ -141,12 +134,12 @@ export function ContactSection({ contactRef }) {
               <MailIcon className="h-6 w-6 text-primary" />
             </div>
             <div>
-              <h3 className="font-medium">Email</h3>
+              <h3 className="font-medium">{t('contact.info.emailTitle')}</h3>
               <a
                 href="mailto:clement.zambon@gmail.com"
                 className="text-muted-foreground hover:text-primary transition-colors"
               >
-                clement.zambon@gmail.com
+                {t('contact.info.emailAddress')}
               </a>
             </div>
           </div>
@@ -156,13 +149,15 @@ export function ContactSection({ contactRef }) {
               <MapPinIcon className="h-6 w-6 text-primary" />
             </div>
             <div>
-              <h3 className="font-medium">Location</h3>
-              <p className="text-muted-foreground">France</p>
+              <h3 className="font-medium">{t('contact.info.locationTitle')}</h3>
+              <p className="text-muted-foreground">
+                {t('contact.info.locationValue')}
+              </p>
             </div>
           </div>
 
           <div>
-            <h3 className="font-medium mb-3">Connect with me</h3>
+            <h3 className="font-medium mb-3">{t('contact.info.connect')}</h3>
             <div className="flex gap-4">
               <a
                 href="https://linkedin.com/in/yourusername"
@@ -185,8 +180,7 @@ export function ContactSection({ contactRef }) {
 
           <div className="mt-8">
             <p className="text-muted-foreground">
-              I typically respond within 24 hours. Looking forward to
-              connecting!
+              {t('contact.info.responseNote')}
             </p>
           </div>
         </div>
