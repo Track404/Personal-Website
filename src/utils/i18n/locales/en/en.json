@@ -21,7 +21,33 @@
     "contactMe": "Contact Me",
     "galaxiaSocial": {
       "name": "galaxia Social",
-      "title": "Social Media "
+      "title": "Social Media ",
+      "card": {
+        "galaxia": {
+          "description": "A modern social media platform designed to showcase my web development skills.",
+          "featuresTitle": "Features",
+          "features": [
+            "✅ User authentication (JWT & GitHub OAuth2)",
+            "✅ Create and edit posts",
+            "✅ Like and comment on posts",
+            "✅ Follow/unfollow users",
+            "✅ Secure REST API for data management",
+            "✅ Responsive design with TailwindCSS"
+          ],
+          "demoTitle": "Demo",
+          "liveDemo": "🚀 Live Demo",
+          "frontendRepo": " FrontEnd Repo",
+          "backendRepo": " Backend Repo",
+          "technologiesTitle": "Technologies",
+          "technologies": [
+            "🛠 Frontend: React, TailwindCSS",
+            "🚀 Backend: Node.js, Express.js",
+            "🛢 Database: PostgreSQL",
+            "🔐 Authentication: JWT, OAuth2 (GitHub)",
+            "📡 API Type: REST API"
+          ]
+        }
+      }
     },
     "theHive": {
       "name": "The Hive",
