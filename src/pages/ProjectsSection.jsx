@@ -9,6 +9,8 @@ import Sanix from '../assets/sanix.svg';
 import { useTranslation } from 'react-i18next';
 import { Safari } from '@/components/magicui/safari';
 import Iphone15Pro from '@/components/magicui/iphone-15-pro';
+import GalaxiaCard from '@/components/carouselCards/GalaxiaCard';
+import TheHiveCard from '@/components/carouselCards/TheHiveCard';
 export default function ProjectsSection({ projectsRef, contactRef }) {
   const { t } = useTranslation();
   const cards = data.map((card, index) => (
@@ -46,7 +48,7 @@ const DummyContent = () => {
         </p>
 
         <h2 className="text-2xl font-bold mt-6 text-neutral-700 dark:text-neutral-200">
-          Features
+          YO
         </h2>
         <ul className="list-disc list-inside text-neutral-600 dark:text-neutral-400">
           <li>✅ User authentication (JWT & GitHub OAuth2)</li>
@@ -132,7 +134,7 @@ const data = [
     category: 'Galaxia Social',
     title: 'Social Media Platform',
     src: Galaxia,
-    content: <DummyContent />,
+    content: <GalaxiaCard />,
     bgColor: 'bg-emerald-300',
   },
   {
@@ -140,7 +142,7 @@ const data = [
     category: 'The Hive',
     title: 'Messaging app',
     src: theHive,
-    content: <DummyContent />,
+    content: <TheHiveCard />,
     bgColor: 'bg-amber-300',
   },
   {
