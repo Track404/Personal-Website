@@ -110,7 +110,34 @@
     },
     "sanix": {
       "name": "Sanix",
-      "title": "Shopping Website"
+      "title": "Shopping Website",
+      "card": {
+        "sanix": {
+          "description": "A sleek and minimal shopping cart app powered by React and the FakeStore API.",
+          "featuresTitle": "Features",
+          "features": [
+            "✅ Browse products from the FakeStore API (https://fakestoreapi.com)",
+            "✅ Add and remove items from your cart",
+            "✅ Modify item quantity inside the cart",
+            "✅ View total cost and item count",
+            "✅ Persist cart state using localStorage",
+            "✅ Clean and responsive layout using **CSS Modules**"
+          ],
+          "demoTitle": "Live Demo",
+          "liveDemo": "Play Now",
+          "frontendRepo": "Frontend Repository",
+          "backendRepo": "Backend Repository",
+          "technologiesTitle": "Technologies",
+          "technologies": [
+            "🛠 Frontend: React",
+            "💅 Styling: CSS Modules",
+            "🔄 Data Fetching: Fetch API",
+            "🚀 Build Tool: Vite",
+            "📦 API: FakeStore API",
+            "🧪 Dev Tools: Vite Dev Server, ESLint, Prettier"
+          ]
+        }
+      }
     }
   },
   "contact": {
