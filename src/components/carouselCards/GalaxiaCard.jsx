@@ -3,7 +3,8 @@
 import { useTranslation } from 'react-i18next';
 import { Safari } from '@/components/magicui/safari';
 import Iphone15Pro from '@/components/magicui/iphone-15-pro';
-
+import ScreenShot from '../../assets/screenshot.png';
+import ScreenShotMobile from '../../assets/screenshotMobile.png';
 export default function GalaxiaCard() {
   const { t } = useTranslation();
 
@@ -75,12 +76,9 @@ export default function GalaxiaCard() {
         </a>
       </p>
 
-      <Safari
-        imageSrc="/src/assets/screenshot.png"
-        className="w-full h-full mt-5 mb-5"
-      />
+      <Safari imageSrc={ScreenShot} className="w-full h-full mt-5 mb-5" />
       <Iphone15Pro
-        src="/src/assets/screenshotMobile.png"
+        src={ScreenShotMobile}
         className="mx-auto w-1/2  h-full mt-5 mb-5"
       />
 
