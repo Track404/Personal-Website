@@ -79,9 +79,34 @@
         }
       }
     },
-    "wheresWaldo": {
+    "waldo": {
       "name": "Où est Charlie",
-      "title": "Jeu sur Navigateur"
+      "title": "Jeu sur Navigateur",
+      "card": {
+        "description": "Un jeu amusant et interactif où les joueurs s'affrontent pour trouver des personnages cachés dans une image détaillée.",
+        "featuresTitle": "Fonctionnalités",
+        "features": [
+          "✅ Trouver des personnages cachés dans une image complexe",
+          "✅ Suivre votre <strong>temps de complétion</strong> et <strong>score</strong>",
+          "✅ Design responsive qui fonctionne sur tous les appareils",
+          "✅ Feedback animé pour les clics corrects/incorrects",
+          "✅ Classement dynamique pour suivre les meilleurs joueurs",
+          "✅ Backend avec soumission et validation sécurisées des scores"
+        ],
+        "demoTitle": "Démo en direct",
+        "liveDemo": "Jouer maintenant",
+        "frontendRepo": "Dépôt Frontend",
+        "backendRepo": "Dépôt Backend",
+        "technologiesTitle": "Technologies",
+        "technologies": [
+          "🛠 Frontend : React, CSS Modules",
+          "🧠 Gestion d'état : React Context",
+          "🖼️ Gestion des images : Détection personnalisée basée sur des zones de clic",
+          "🚀 Backend : Node.js, Express.js",
+          "🛢 Base de données : PostgreSQL",
+          "📡 Type d'API : REST"
+        ]
+      }
     },
     "sanix": {
       "name": "Sanix",

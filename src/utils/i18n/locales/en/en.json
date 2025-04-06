@@ -79,9 +79,34 @@
         }
       }
     },
-    "wheresWaldo": {
+    "waldo": {
       "name": "Where's Waldo",
-      "title": "Browser Game"
+      "title": "Browser Game",
+      "card": {
+        "description": "A fun and interactive game where players race to find hidden characters in a detailed image.",
+        "featuresTitle": "Features",
+        "features": [
+          "✅ Find characters hidden in a complex image",
+          "✅ Track your <strong>completion time</strong> and <strong>score</strong>",
+          "✅ Responsive design that works on all devices",
+          "✅ Animated feedback for correct/incorrect clicks",
+          "✅ Dynamic leaderboard to track top players",
+          "✅ Backend with secure score submission and validation"
+        ],
+        "demoTitle": "Live Demo",
+        "liveDemo": "Play Now",
+        "frontendRepo": "Frontend Repository",
+        "backendRepo": "Backend Repository",
+        "technologiesTitle": "Technologies",
+        "technologies": [
+          "🛠 Frontend: React, TailwindCSS",
+          "🧠 State Management: React Context",
+          "🖼️ Image Handling: Custom hitbox-based detection",
+          "🚀 Backend: Node.js, Express.js",
+          "🛢 Database: PostgreSQL",
+          "📡 API Type: REST"
+        ]
+      }
     },
     "sanix": {
       "name": "Sanix",

@@ -11,6 +11,7 @@ import { Safari } from '@/components/magicui/safari';
 import Iphone15Pro from '@/components/magicui/iphone-15-pro';
 import GalaxiaCard from '@/components/carouselCards/GalaxiaCard';
 import TheHiveCard from '@/components/carouselCards/TheHiveCard';
+import WheresWaldoCard from '@/components/carouselCards/WaldoCard';
 export default function ProjectsSection({ projectsRef, contactRef }) {
   const { t } = useTranslation();
   const cards = data.map((card, index) => (
@@ -146,11 +147,11 @@ const data = [
     bgColor: 'bg-amber-300',
   },
   {
-    name: 'wheresWaldo',
+    name: 'waldo',
     category: "Where's Waldo",
     title: 'Browser Game',
     src: Waldo,
-    content: <DummyContent />,
+    content: <WheresWaldoCard />,
   },
 
   {
