@@ -160,7 +160,7 @@ export function ContactSection({ contactRef }) {
             <h3 className="font-medium mb-3">{t('contact.info.connect')}</h3>
             <div className="flex gap-4">
               <a
-                href="https://linkedin.com/in/yourusername"
+                href="https://www.linkedin.com/in/cl%C3%A9ment-zambon-431b13351/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="bg-primary/10 p-3 rounded-full hover:bg-primary/20 transition-colors"
