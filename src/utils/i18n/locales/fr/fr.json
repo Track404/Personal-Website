@@ -4,6 +4,11 @@
     "dev": "Developpeur",
     "seeMore": "Voir Plus"
   },
+  "navbar": {
+    "projects": "Projets",
+    "contact": "Contact",
+    "about": "À propos"
+  },
   "about": {
     "pageName": "À propos ",
     "description": {
