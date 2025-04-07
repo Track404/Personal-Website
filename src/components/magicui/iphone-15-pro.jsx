@@ -41,17 +41,18 @@ export default function Iphone15Pro({
       <path
         opacity="0.5"
         d="M174 5H258V5.5C258 6.60457 257.105 7.5 256 7.5H176C174.895 7.5 174 6.60457 174 5.5V5Z"
-        className="fill-[#a4f4cf] dark:fill-[#404040]"
+        className="fill-[#ffffff] dark:fill-[#404040]"
       />
       <path
         d="M21.25 75C21.25 44.2101 46.2101 19.25 77 19.25H355C385.79 19.25 410.75 44.2101 410.75 75V807C410.75 837.79 385.79 862.75 355 862.75H77C46.2101 862.75 21.25 837.79 21.25 807V75Z"
-        className="fill-[#d0fae5] stroke-[#E5E5E5] stroke-[0.5] "
+        className="fill-[#ffffff] stroke-[#E5E5E5] stroke-[0.5] "
       />
+
       {src && (
         <image
           href={src}
-          x="25.25"
-          y="35.25"
+          x="22.25"
+          y="38.25"
           width="389.5"
           height="833.5"
           preserveAspectRatio="xMidYMid slice"
