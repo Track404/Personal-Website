@@ -92,7 +92,7 @@ export function MagicCard({
           opacity: gradientOpacity,
         }}
       />
-      <div className="relative">{children}</div>
+      <div className="relative bg-white">{children}</div>
     </div>
   );
 }
