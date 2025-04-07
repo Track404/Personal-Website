@@ -8,7 +8,7 @@ export default function HeaderSection({ headerRef, aboutRef }) {
     <>
       <div ref={headerRef}>
         <HeroHighlight ContainerRef={aboutRef} textButton={t('header.seeMore')}>
-          <div className="ml-4 h-full mt-10 ">
+          <div className="ml-4  h-full mt-20 mb-20 ">
             <h1 className=" flex flex-col ml-2 text-6xl font-bold tracking-tighter sm:text-5xl md:text-7xl lg:text-8xl">
               Full Stack
               <AuroraText>

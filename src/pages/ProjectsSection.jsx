@@ -18,7 +18,7 @@ export default function ProjectsSection({ projectsRef, contactRef }) {
   ));
   return (
     <>
-      <div ref={projectsRef} className="h-screen  ">
+      <div ref={projectsRef} className="h-full  ">
         <HeroHighlight
           className="w-full"
           ContainerRef={contactRef}
