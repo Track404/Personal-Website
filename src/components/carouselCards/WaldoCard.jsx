@@ -33,7 +33,7 @@ export default function WaldoCard() {
       </h2>
 
       <a
-        href="https://your-waldo-game.netlify.app"
+        href="https://whereswaldoz.netlify.app/"
         target="_blank"
         rel="noopener noreferrer"
         className="inline-block mt-6 mb-6 px-8 py-4 text-white text-xl font-semibold rounded-xl shadow 
@@ -47,7 +47,7 @@ export default function WaldoCard() {
       <p>
         🔗{' '}
         <a
-          href="https://github.com/yourusername/waldo-game"
+          href="https://github.com/Track404/WheresWaldo-Frontend"
           target="_blank"
           rel="noopener noreferrer"
           className="inline-block pl-1 bg-gradient-to-r from-[#FF0080] via-[#7928CA] to-[#0070F3] 

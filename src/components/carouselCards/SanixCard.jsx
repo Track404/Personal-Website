@@ -49,7 +49,7 @@ export default function SanixCard() {
       <p>
         🔗{' '}
         <a
-          href="https://github.com/ClementZambon/sanix"
+          href="https://github.com/Track404/shopping-cart"
           target="_blank"
           rel="noopener noreferrer"
           className="inline-block pl-1 bg-gradient-to-r from-[#FF0080] via-[#7928CA] to-[#0070F3] 
@@ -58,21 +58,6 @@ export default function SanixCard() {
              hover:scale-105 active:scale-95"
         >
           {t('projects.sanix.card.sanix.frontendRepo')}
-        </a>
-      </p>
-
-      <p>
-        🔗{' '}
-        <a
-          href="https://github.com/ClementZambon/sanix-backend"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="inline-block pl-1 bg-gradient-to-r from-[#FF0080] via-[#7928CA] to-[#0070F3] 
-             bg-clip-text text-transparent font-semibold hover:underline 
-             transform transition-transform duration-300 ease-in-out 
-             hover:scale-105 active:scale-95"
-        >
-          {t('projects.sanix.card.sanix.backendRepo')}
         </a>
       </p>
 
