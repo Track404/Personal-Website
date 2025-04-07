@@ -246,8 +246,8 @@ export const Card = ({ card, index, layout = false }) => {
           alt={card.title}
           className="object-cover absolute z-10 inset-0"
         />
-        <div className="absolute  bottom-5 right-10 text-white  font-medium  z-11">
-          Show more
+        <div className="absolute  bottom-5 right-10 text-white text-lg font-bold  z-11">
+          <AuroraText>{t(`projects.showMore`)}</AuroraText>
         </div>
       </motion.button>
     </>
