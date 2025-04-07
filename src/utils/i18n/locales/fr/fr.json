@@ -93,8 +93,8 @@
           "✅ Classement dynamique pour suivre les meilleurs joueurs",
           "✅ Backend avec soumission et validation sécurisées des scores"
         ],
-        "demoTitle": "Démo en direct",
-        "liveDemo": "Jouer maintenant",
+        "demoTitle": "Démo ",
+        "liveDemo": "🚀 Démo en ligne",
         "frontendRepo": "Dépôt Frontend",
         "backendRepo": "Dépôt Backend",
         "technologiesTitle": "Technologies",
@@ -123,8 +123,8 @@
             "✅ Sauvegardez l'état du panier grâce à localStorage",
             "✅ Mise en page propre et réactive avec **CSS Modules**"
           ],
-          "demoTitle": "Démo en direct",
-          "liveDemo": "Jouer maintenant",
+          "demoTitle": "Démo",
+          "liveDemo": "🚀 Démo en ligne",
           "frontendRepo": "Dépôt Frontend",
           "backendRepo": "Dépôt Backend",
           "technologiesTitle": "Technologies",

@@ -2,8 +2,6 @@
 
 import { useTranslation } from 'react-i18next';
 import { Safari } from '@/components/magicui/safari';
-
-import Android from '../magicui/android';
 import ScreenShot from '../../assets/screenshot/screenshotGalaxia.png';
 import ScreenShotMobile from '../../assets/screenshot/screenshotGalaxiaMobile.png';
 export default function GalaxiaCard() {

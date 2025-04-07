@@ -93,8 +93,8 @@
           "✅ Dynamic leaderboard to track top players",
           "✅ Backend with secure score submission and validation"
         ],
-        "demoTitle": "Live Demo",
-        "liveDemo": "Play Now",
+        "demoTitle": "Demo",
+        "liveDemo": "🚀 Live Demo",
         "frontendRepo": "Frontend Repository",
         "backendRepo": "Backend Repository",
         "technologiesTitle": "Technologies",
@@ -123,8 +123,8 @@
             "✅ Persist cart state using localStorage",
             "✅ Clean and responsive layout using **CSS Modules**"
           ],
-          "demoTitle": "Live Demo",
-          "liveDemo": "Play Now",
+          "demoTitle": "Demo",
+          "liveDemo": "🚀 Live Demo",
           "frontendRepo": "Frontend Repository",
           "backendRepo": "Backend Repository",
           "technologiesTitle": "Technologies",

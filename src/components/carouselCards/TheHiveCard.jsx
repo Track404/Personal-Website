@@ -2,7 +2,8 @@
 
 import { useTranslation } from 'react-i18next';
 import { Safari } from '@/components/magicui/safari';
-import Iphone15Pro from '@/components/magicui/iphone-15-pro';
+import ScreenShot from '../../assets/screenshot/screenshotTheHive.png';
+import ScreenShotMobile from '../../assets/screenshot/screenshotTheHiveMobile.png';
 
 export default function TheHiveCard() {
   const { t } = useTranslation();
@@ -75,13 +76,12 @@ export default function TheHiveCard() {
         </a>
       </p>
 
-      <Safari
-        imageSrc="/src/assets/thehive-desktop.png"
-        className="w-full h-full mt-5 mb-5"
-      />
-      <Iphone15Pro
-        src="/src/assets/thehive-mobile.png"
-        className="mx-auto w-1/2 h-full mt-5 mb-5"
+      <Safari imageSrc={ScreenShot} className="w-full h-full mt-5 mb-5" />
+
+      <img
+        src={ScreenShotMobile}
+        className="mx-auto w-1/2  h-full mt-5 mb-5 rounded-xl shadow-md"
+        alt="mobile"
       />
 
       <h2 className="text-2xl font-bold mt-6 text-neutral-700 dark:text-neutral-200">
