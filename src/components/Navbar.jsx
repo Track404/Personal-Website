@@ -18,6 +18,11 @@ function Navbar({ headerRef, aboutRef, projectsRef, contactRef }) {
         </h1>
         <div className="flex gap-2 mr-3 md:gap-4 md:mr-5 md:text-lg font-bold tracking-tighter  lg:text-2xl">
           <Highlight>
+            <div onClick={() => scrollToSection(aboutRef)}>
+              {t('navbar.about')}
+            </div>
+          </Highlight>
+          <Highlight>
             <div onClick={() => scrollToSection(projectsRef)}>
               {t('navbar.projects')}
             </div>
@@ -25,11 +30,6 @@ function Navbar({ headerRef, aboutRef, projectsRef, contactRef }) {
           <Highlight>
             <div onClick={() => scrollToSection(contactRef)}>
               {t('navbar.contact')}
-            </div>
-          </Highlight>
-          <Highlight>
-            <div onClick={() => scrollToSection(aboutRef)}>
-              {t('navbar.about')}
             </div>
           </Highlight>
         </div>
